@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="parolcss.css">
+  <title>Зареєструватися</title>
+</head>
+<body>
+
+<div>
+  
+ 
+  <header>
+    <a href="space.html" class="logo">SPACE</a>
+ <nav>
+   <ul>
+   </ul>
+ </nav>
+</div>
+
+  </header>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Зареєструватися</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Зареєструватися</h1>
+      <p>Це швидко і просто.</p>
+      <hr>
+      <label for="Phone"><b>Прізвище Імя</b></label>
+      <input type="text" placeholder="Прізвище Імя" name="email" required>
+      <label for="Phone"><b>Телефон</b></label>
+      <input type="text" placeholder="Номер телефону" name="email" required>
+
+      <label for="psw"><b>Пароль</b></label>
+      <input type="password" placeholder="Введіть Пароль" name="psw" required>
+
+      <label for="psw-repeat"><b>Повторіть Пароль</b></label>
+      <input type="password" placeholder="Повторіть Пароль" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px;"> Пітвердити
+      </label>
+
+      <p>By Yulia <a href="https://www.instagram.com/stetskka/" style="color:#D36A43">Сlick🧚</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Скасувати</button>
+        <button  type="submit"   class="signupbtn">Зареєструватися</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+var modal = document.getElementById('id01');
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>

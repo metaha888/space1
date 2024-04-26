@@ -1,0 +1,167 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	list-style: none;
+	text-decoration: none;
+}
+
+body{
+	background: url("Photo/bgr.png");
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+header{
+	position: static;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 8%;
+	box-shadow: 0 px 20px #000;
+}
+
+header .logo{
+	padding: 10px;
+	font-size: 35px;
+	font-weight: 900;
+	font-style: 20px;
+	text-decoration: none;
+	color: #00A3FF;
+	text-shadow: 0px 1px 10px #00A3FF;
+	letter-spacing: 2px;
+	transition: .5s;
+}
+
+header .logo:hover{
+	transform: scale(1.2);
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 20px;
+    background: #ffff;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+    background-color: white;
+    border-radius: 20px;
+    outline: none;
+}
+
+button {
+    background-color: #00A3FF;
+    color: white;
+    padding: 14px 20px;
+    margin: 0 auto;
+    display: block;
+    justify-content: center;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: transparent;
+    border: 1px solid white;
+
+}
+
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+  border: 1px solid white;
+}
+
+
+.container {
+    padding: 16px;
+    color #fff
+}
+
+
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background: url("Photo/bgr.png");
+    width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+    border-radius: 10px;
+    padding-top: 50px;
+}
+
+
+.modal-content {
+    background-color: #00A3FF;
+    margin: 5% auto 15% auto; 
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 80%; 
+    box-shadow: 0px 1px 10px #000;
+    color: #fff;
+}
+
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+ 
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+}
